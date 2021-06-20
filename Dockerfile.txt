@@ -1,0 +1,8 @@
+#docker file- creating container from docker file
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "welcome Abinash ,it's yo boy Abinash sing" >/tmp/testfile1.txt
+ENV myname Abinash
+COPY testfile /tmp
+ADD test.tar.gz /tmp
+
